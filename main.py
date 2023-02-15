@@ -20,14 +20,13 @@ def albumFotos():
     lblMensaje.config(text = mensaje)
     
 def reset():
-    opcion.set(None)
+    seleccion.set(None)
     lblMensaje.config(text='Selecciona otro lugar')
     
 
 ventana = tk.Tk()
 seleccion = tk.IntVar()
-opcion = StringVar()
-opcion.set(None)
+seleccion.set(None)
 
 rbnBrasil = tk.Radiobutton(ventana, text = 'Brasil', variable = seleccion, value = 1 ,command = albumFotos).pack(anchor = tk.W)
 
