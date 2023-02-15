@@ -26,7 +26,6 @@ def reset():
 
 ventana = tk.Tk()
 seleccion = tk.IntVar()
-seleccion.set(None)
 
 rbnBrasil = tk.Radiobutton(ventana, text = 'Brasil', variable = seleccion, value = 1 ,command = albumFotos).pack(anchor = tk.W)
 
